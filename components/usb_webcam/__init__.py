@@ -137,7 +137,7 @@ async def to_code(config):
 
     cg.add_define("USE_USB_WEBCAM")
 
-    assert(CORE.using_esp_idf)
+    assert CORE.is_esp32, "USB Webcam component requires ESP32"
     add_idf_component(
             name="usb_stream",
             ref="v2.0",
