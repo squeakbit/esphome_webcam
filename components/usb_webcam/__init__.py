@@ -142,7 +142,6 @@ async def to_code(config):
         name="espressif/usb_stream",
         ref="1.5.2"
     )
-    )
     # no need in cg.add_library("espressif/esp32-camera", "1.0.0")
     # esp_camera.h and sensor.h are taken from it directly
     for d, v in {
